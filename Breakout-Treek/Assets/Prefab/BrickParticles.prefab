@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5405907766714663525}
   - component: {fileID: 136909328924166209}
   - component: {fileID: 5347478939841274442}
+  - component: {fileID: 8694255931796927075}
   m_Layer: 0
   m_Name: BrickParticles
   m_TagString: Untagged
@@ -4830,3 +4831,16 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &8694255931796927075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8144028294222711729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec2c5823b327ac459ba56a3d2624ace, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 1
