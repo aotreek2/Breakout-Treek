@@ -15,7 +15,7 @@ public class TimedDestroy : MonoBehaviour
 	public float destroyTime = 1f;
 	void Start()
 	{
-		Destroy(gameObject, destroyTime);
+		Destroy(gameObject, destroyTime); //destroys the particles after 1 sec
 	}
 }
 

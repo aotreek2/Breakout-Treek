@@ -22,11 +22,11 @@ public class BallController : MonoBehaviour
 
 	void Update()
 	{
-		if (Input.GetButtonDown("Fire1") && ballInPlay == false)
+		if (Input.GetButtonDown("Fire1") && ballInPlay == false) //if the mouse is clicked and the ball is not moving
 		{
 			transform.parent = null; //unparent the ball from paddle
 			ballInPlay = true;
-			rb.isKinematic = false;
+			rb.isKinematic = false; //makes the balls rigidbody kinematic and adds force
 			rb.AddForce(new Vector3(initialVelocity, initialVelocity, 0));
 		}
 	}

@@ -14,16 +14,15 @@ using UnityEngine;
 public class Bricks : MonoBehaviour
 {
 	public GameObject brickParticle;
-	GameManager GM;
 	void Start()
 	{
-		GM = GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>();
+
 	}
 	void OnCollisionEnter(Collision other)
 	{
-		Instantiate(brickParticle, transform.position, Quaternion.identity);
-		GM.DestroyBrick();
-		Destroy(gameObject);
+		Instantiate(brickParticle, transform.position, Quaternion.identity); //Instantiates the particle effect when the brick is destroyed
+		GameManager.instance.DestroyBrick(); //calls the method from the gamemanager instance
+		Destroy(gameObject); 
 	}
 }
 
